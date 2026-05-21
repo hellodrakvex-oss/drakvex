@@ -30,21 +30,34 @@ export const Contact = () => {
             Let's transform your business with premium digital experiences and AI automation.
           </motion.p>
 
-          <div className="flex flex-col gap-6">
-            <a href="mailto:hello@drakvex.in" className="flex items-center gap-4 text-white hover:text-brand-blue transition-colors group">
-              <div className="w-12 h-12 rounded-full border border-white/10 bg-white/5 flex items-center justify-center group-hover:bg-brand-blue/10 group-hover:border-brand-blue/50 transition-all">
-                <Mail className="w-5 h-5" />
-              </div>
-              <span className="font-space-grotesk text-xl">hello@drakvex.in</span>
-            </a>
+          <div className="flex flex-wrap gap-4 mt-4">
+              <a
+                href="https://api.whatsapp.com/send?phone=919150254231&text=Hello%20Drakvex%2C%20I%20want%20to%20know%20more%20about%20your%20services."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <MagneticButton
+                  variant="secondary"
+                  className="px-6 py-3"
+                >
+                  <MessageCircle className="w-4 h-4" />
+                  WhatsApp Us
+                </MagneticButton>
+              </a>
 
-            <div className="flex flex-wrap gap-4 mt-4">
-              <MagneticButton variant="secondary" className="px-6 py-3">
-                <MessageCircle className="w-4 h-4" /> WhatsApp Us
-              </MagneticButton>
-              <MagneticButton variant="outline" className="px-6 py-3">
-                <Calendar className="w-4 h-4" /> Book Meeting
-              </MagneticButton>
+              <a
+                href="mailto:hello@drakvex.in"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <MagneticButton
+                  variant="outline"
+                  className="px-6 py-3"
+                >
+                  <Calendar className="w-4 h-4" />
+                  Book Meeting
+                </MagneticButton>
+              </a>
             </div>
           </div>
         </div>
