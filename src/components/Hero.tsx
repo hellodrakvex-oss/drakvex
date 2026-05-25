@@ -145,9 +145,7 @@ useEffect(() => {
     <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
   </MagneticButton>
 </a>
-          <MagneticButton variant="outline" className="w-full sm:w-auto py-4 px-8 text-base">
-            Book Free Strategy Call
-          </MagneticButton>
+          
         </motion.div>
       </motion.div>
 
