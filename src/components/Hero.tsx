@@ -136,9 +136,15 @@ useEffect(() => {
           transition={{ duration: 1, delay: 3.4, ease: [0.16, 1, 0.3, 1] }}
           className="mt-10 flex flex-col sm:flex-row items-center gap-4"
         >
-          <MagneticButton variant="secondary" className="w-full sm:w-auto py-4 px-8 text-base">
-            View Our Work <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-          </MagneticButton>
+          <a href="#work">
+  <MagneticButton
+    variant="secondary"
+    className="w-full sm:w-auto py-4 px-8 text-base"
+  >
+    View Our Work{" "}
+    <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+  </MagneticButton>
+</a>
           <MagneticButton variant="outline" className="w-full sm:w-auto py-4 px-8 text-base">
             Book Free Strategy Call
           </MagneticButton>
