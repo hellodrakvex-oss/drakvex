@@ -212,6 +212,9 @@ export const Contact = () => {
                   }
                 );
 
+                try {
+              
+
                   // SEND EMAIL
                   const mailRes = await fetch(
                     "/api/contact",
