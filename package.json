@@ -17,11 +17,7 @@
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "resend": "^6.12.3",
-<<<<<<< HEAD
     "tailwind-merge": "^3.6.0",
-=======
-    "tailwind-merge": "^3.6.0"
->>>>>>> 4097d07fe7ee7a1eccc828603f39f2364f4ab991
     "sonner": "^2.0.3"
   },
   "devDependencies": {
