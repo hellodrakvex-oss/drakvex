@@ -18,10 +18,12 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: "DRAKVEX | Modern Websites & AI Systems",
-  description: "We help startups and businesses build powerful digital experiences using cutting-edge web technologies and AI automation.",
+  description:
+    "We help startups and businesses build powerful digital experiences using cutting-edge web technologies and AI automation.",
   openGraph: {
     title: "DRAKVEX | Modern Websites & AI Systems",
-    description: "Premium digital experiences and AI automation.",
+    description:
+      "Premium digital experiences and AI automation.",
     url: "https://drakvex.in",
     siteName: "DRAKVEX",
     locale: "en_US",
@@ -35,17 +37,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable} antialiased dark`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${spaceGrotesk.variable} antialiased dark`}
+    >
       <body className="bg-black text-white min-h-screen">
         <div className="noise-overlay"></div>
+
         <Preloader />
         <CustomCursor />
+
         <LenisScroll>{children}</LenisScroll>
+
         <Toaster
-    position="top-right"
-    richColors
-    closeButton
-  />
+          position="top-right"
+          richColors
+          closeButton
+        />
       </body>
     </html>
   );
