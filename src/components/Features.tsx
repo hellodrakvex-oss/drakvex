@@ -34,7 +34,7 @@ export const Features = () => {
             transition={{ delay: 0.1 }}
             className="text-white/60 font-inter text-lg mb-8"
           >
-            We don't just build websites; we engineer digital ecosystems that drive growth, automate operations, and elevate your brand globally.
+            We don&apos;t just build websites; we engineer digital ecosystems that drive growth, automate operations, and elevate your brand globally.
           </motion.p>
         </div>
 

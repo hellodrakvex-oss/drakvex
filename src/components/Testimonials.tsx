@@ -26,7 +26,8 @@ export const Testimonials = () => {
         >
           Client <span className="text-brand-purple">Stories</span>
         </motion.h2>
-        <p className="text-white/60 font-inter text-lg">Don't just take our word for it.</p>
+        <p className="text-white/60 font-inter text-lg">Don&apos;t just take our word for it.
+</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -34,7 +35,7 @@ export const Testimonials = () => {
           <GlassCard key={idx} className="p-8 relative" delay={idx * 0.1}>
             <Quote className="absolute top-6 right-6 w-12 h-12 text-white/5" />
             <p className="text-white/80 font-inter leading-relaxed mb-8 relative z-10">
-              "{t.quote}"
+               &quot;{t.quote}&quot;
             </p>
             <div className="flex items-center gap-4">
               <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-brand-blue to-brand-purple flex items-center justify-center text-white font-space-grotesk font-bold text-sm">

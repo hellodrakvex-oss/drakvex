@@ -40,7 +40,7 @@ export const Contact = () => {
             transition={{ delay: 0.1 }}
             className="text-white/60 font-inter text-lg mb-12 max-w-md"
           >
-            Let's transform your business with
+            Let&apos;s transform your business with
             premium digital experiences and AI
             automation.
           </motion.p>

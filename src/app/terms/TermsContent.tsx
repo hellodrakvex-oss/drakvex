@@ -78,7 +78,7 @@ export default function TermsContent() {
         <GlassCard>
           <h2 className="font-space-grotesk text-2xl font-semibold mb-4">1. Introduction</h2>
           <p className="text-white/80">
-            These Terms of Service ("Terms") govern your access to and use of DRAKVEX’s platforms, products, and services (collectively, "Services"). By accessing or using our Services, you agree to be bound by these Terms.
+            These Terms of Service (&quot;Terms&quot;) govern your access to and use of DRAKVEX’s platforms, products, and services (collectively, &quot;Services&quot;).
           </p>
         </GlassCard>
 
@@ -150,7 +150,7 @@ export default function TermsContent() {
         <GlassCard>
           <h2 className="font-space-grotesk text-2xl font-semibold mb-4">10. Third‑Party Services</h2>
           <p className="text-white/80">
-            Our Services may incorporate third‑party APIs or tools. You are responsible for complying with those providers' terms and any associated fees.
+            Our Services may incorporate third‑party APIs or tools. You are responsible for complying with those providers&apos; terms and any associated fees.
           </p>
         </GlassCard>
 
@@ -174,7 +174,7 @@ export default function TermsContent() {
         <GlassCard>
           <h2 className="font-space-grotesk text-2xl font-semibold mb-4">13. Policy Updates</h2>
           <p className="text-white/80">
-            We reserve the right to modify these Terms at any time. Updated terms will be posted on our website with a new "Last Updated" date.
+            We reserve the right to modify these Terms at any time. Updated terms will be posted on our website with a new &quot;Last Updated&quot; date
           </p>
         </GlassCard>
 

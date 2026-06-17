@@ -3,7 +3,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { MagneticButton } from "./ui/MagneticButton";
 import { ArrowRight, Sparkles } from "lucide-react";
-import { useRef, useEffect, useState } from "react";
+import { useRef, useMemo } from "react";
 
 export const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -16,15 +16,17 @@ export const Hero = () => {
   const y2 = useTransform(scrollYProgress, [0, 1], [0, -100]);
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
-const [particles, setParticles] = useState<Array<{ id: number; x: number; y: number }>>([]);
-useEffect(() => {
-  const generated = Array.from({ length: 40 }, (_, i) => ({
-    id: i,
-    x: Math.random() * 1800,
-    y: Math.random() * 1000,
-  }));
-  setParticles(generated);
-}, []);
+const particles = useMemo(
+  () =>
+    Array.from({ length: 40 }, (_, i) => ({
+      id: i,
+      x: (i * 73) % 1800,
+      y: (i * 91) % 1000,
+      duration: 4 + ((i * 37) % 6),
+      delay: (i * 19) % 5,
+    })),
+  []
+);
   
 
   return (
@@ -83,7 +85,11 @@ useEffect(() => {
       key={p.id}
       initial={{ opacity: 0, y: p.y, x: p.x }}
       animate={{ opacity: [0, 1, 0], y: -100 }}
-      transition={{ duration: 4 + Math.random() * 6, repeat: Infinity, delay: Math.random() * 5 }}
+transition={{
+  duration: p.duration,
+  repeat: Infinity,
+  delay: p.delay,
+}}
       className="absolute w-1 h-1 rounded-full bg-white/40"
     />
   ))}

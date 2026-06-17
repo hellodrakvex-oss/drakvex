@@ -17,9 +17,13 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://drakvex.in"),
+
   title: "DRAKVEX | Modern Websites & AI Systems",
+
   description:
     "We help startups and businesses build powerful digital experiences using cutting-edge web technologies and AI automation.",
+
   openGraph: {
     title: "DRAKVEX | Modern Websites & AI Systems",
     description:
