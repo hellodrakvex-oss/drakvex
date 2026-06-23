@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Terms of Service | DRAKVEX",
     description: "Review the official Terms of Service for DRAKVEX, a modern IT services and AI automation company.",
-    url: "https://www.drakvex.in/terms",
+    url: "https://drakvex.in/terms",
     siteName: "DRAKVEX",
     locale: "en_US",
     type: "website",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     images: ["/og-terms.jpg"],
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: "https://www.drakvex.in/terms" },
+  alternates: { canonical: "https://drakvex.in/terms" },
 };
 
 export default function TermsPage() {

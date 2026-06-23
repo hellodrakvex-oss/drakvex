@@ -142,7 +142,7 @@ export default function PrivacyContent() {
             <strong>DRAKVEX</strong> – IT Services & AI Automation<br />
             Founder: David&nbsp;Joshwa<br />
             <a href="mailto:hello@drakvex.in" className="underline hover:text-brand-blue transition-colors">hello@drakvex.in</a><br />
-            <a href="https://www.drakvex.in" target="_blank" rel="noopener noreferrer" className="underline hover:text-brand-blue transition-colors">https://www.drakvex.in</a>
+             <a href="https://drakvex.in" target="_blank" rel="noopener noreferrer" className="underline hover:text-brand-blue transition-colors">https://drakvex.in</a>
           </address>
         </GlassCard>
       </motion.div>

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Privacy Policy | DRAKVEX",
     description:
       "Your privacy and data security matter to us. Learn how DRAKVEX collects, uses, and protects your information.",
-    url: "https://www.drakvex.in/privacy",
+    url: "https://drakvex.in/privacy",
     siteName: "DRAKVEX",
     locale: "en_US",
     type: "website",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://www.drakvex.in/privacy",
+    canonical: "https://drakvex.in/privacy",
   },
 };
 

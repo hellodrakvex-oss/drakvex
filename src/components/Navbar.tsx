@@ -6,6 +6,7 @@ import { MagneticButton } from "./ui/MagneticButton";
 import Image from "next/image";
 
 const navLinks = [
+  { name: "About", href: "/about" },
   { name: "Services", href: "#services" },
   { name: "Work", href: "#work" },
   { name: "Process", href: "#process" },

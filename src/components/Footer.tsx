@@ -27,9 +27,9 @@ export const Footer = () => {
         <div>
           <h4 className="font-space-grotesk font-bold text-white mb-6">Company</h4>
           <ul className="flex flex-col gap-4">
-            <li><a href="#work" className="text-white/50 hover:text-brand-blue transition-colors font-inter text-sm">Work</a></li>
+            <li><a href="/about" className="text-white/50 hover:text-brand-blue transition-colors font-inter text-sm">About</a></li>
+            <li><a href="/founder" className="text-white/50 hover:text-brand-blue transition-colors font-inter text-sm">Founder</a></li>
             <li><a href="#services" className="text-white/50 hover:text-brand-blue transition-colors font-inter text-sm">Services</a></li>
-            <li><a href="#process" className="text-white/50 hover:text-brand-blue transition-colors font-inter text-sm">Process</a></li>
             <li><a href="#contact" className="text-white/50 hover:text-brand-blue transition-colors font-inter text-sm">Contact</a></li>
           </ul>
         </div>
@@ -45,7 +45,12 @@ export const Footer = () => {
 
       <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-white/5 text-white/30 font-inter text-xs">
         <p>© {new Date().getFullYear()} DRAKVEX. All rights reserved.</p>
-        <p className="mt-2 md:mt-0">Crafted by DRAKVEX</p>
+        <p className="mt-2 md:mt-0">
+          Founded by{" "}
+          <a href="/founder" className="text-white/50 hover:text-brand-blue transition-colors">
+            David Joshwa
+          </a>
+        </p>
       </div>
     </footer>
   );
