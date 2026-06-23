@@ -58,9 +58,9 @@ export function FounderContent() {
           </p>
           <p className="text-lg text-white/50 font-inter mb-8">DRAKVEX</p>
           <p className="text-lg md:text-xl text-white/60 font-inter max-w-3xl mx-auto leading-relaxed">
-            David Joshwa is the Founder and Developer of DRAKVEX, a digital
-            agency building modern websites, AI automation systems, and
-            business growth solutions for startups and enterprises.
+            David Joshwa is the Founder and Developer of DRAKVEX, a digital solutions startup focused
+             on building modern websites, business platforms, and AI-powered solutions. Passionate 
+             about technology and innovation, he helps businesses transform ideas into impactful digital experiences.
           </p>
         </motion.div>
       </section>
@@ -74,19 +74,17 @@ export function FounderContent() {
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           >
             <h2 className="text-4xl md:text-5xl font-space-grotesk font-bold mb-6">
-              Biography
+              My Story
             </h2>
             <p className="text-white/60 font-inter text-lg leading-relaxed mb-6">
-              David Joshwa founded DRAKVEX with a vision to bridge the gap
-              between cutting-edge technology and practical business solutions.
-              With deep expertise in web development, AI systems, and digital
-              strategy, David Joshwa leads the company in delivering premium digital
-              experiences.
-            </p>
-            <p className="text-white/60 font-inter text-lg leading-relaxed">
-              As Founder and Developer, David Joshwa oversees every project from
-              concept to launch, ensuring that DRAKVEX delivers nothing short
-              of excellence.
+              
+
+I started DRAKVEX with a simple goal: helping businesses build a stronger digital presence through modern technology.
+
+As a developer and entrepreneur, I am passionate about creating websites, automation systems, and digital solutions that solve real-world problems.
+
+Today, DRAKVEX continues to grow with a focus on innovation, quality, and meaningful client partnerships, helping businesses transform ideas into impactful digital experiences.
+
             </p>
           </motion.div>
           <motion.div
@@ -104,7 +102,7 @@ export function FounderContent() {
                   <div className="w-2 h-2 rounded-full bg-brand-blue mt-2 shrink-0" />
                   <div>
                     <p className="text-white font-inter font-medium">Founded DRAKVEX</p>
-                    <p className="text-white/50 font-inter text-sm">Building modern digital solutions</p>
+                    <p className="text-white/50 font-inter text-sm">Building Digital Excellence</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -114,35 +112,11 @@ export function FounderContent() {
                     <p className="text-white/50 font-inter text-sm">Delivering websites and automation</p>
                   </div>
                 </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-brand-blue mt-2 shrink-0" />
-                  <div>
-                    <p className="text-white font-inter font-medium">Digital Strategy & Consulting</p>
-                    <p className="text-white/50 font-inter text-sm">Helping businesses grow digitally</p>
-                  </div>
-                </li>
+               
               </ul>
             </GlassCard>
           </motion.div>
         </div>
-      </section>
-
-      <section className="relative z-10 py-20 px-6 max-w-7xl mx-auto w-full">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mb-16"
-        >
-          <h2 className="text-4xl md:text-5xl font-space-grotesk font-bold mb-6">
-            Vision
-          </h2>
-          <p className="text-white/60 font-inter text-lg max-w-3xl leading-relaxed">
-            David Joshwa believes that every business deserves access to world-class
-            technology. Through DRAKVEX, he is building a future where AI
-            automation and premium web experiences are accessible to all.
-          </p>
-        </motion.div>
       </section>
 
       <section className="relative z-10 py-20 px-6 max-w-7xl mx-auto w-full">
@@ -178,23 +152,6 @@ export function FounderContent() {
             </GlassCard>
           ))}
         </div>
-      </section>
-
-      <section className="relative z-10 py-20 px-6 max-w-7xl mx-auto w-full">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center max-w-3xl mx-auto mb-16"
-        >
-          <h2 className="text-4xl md:text-5xl font-space-grotesk font-bold mb-6">
-            Mission
-          </h2>
-          <p className="text-white/60 font-inter text-lg leading-relaxed">
-            To empower businesses with modern websites, intelligent AI systems,
-            and digital strategies that drive measurable growth.
-          </p>
-        </motion.div>
       </section>
 
       <section className="relative z-10 py-20 px-6 max-w-7xl mx-auto w-full">

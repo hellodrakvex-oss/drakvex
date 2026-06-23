@@ -87,15 +87,12 @@ export function AboutContent() {
               Who We Are
             </h2>
             <p className="text-white/60 font-inter text-lg leading-relaxed mb-6">
-              DRAKVEX was founded with a clear vision: to help businesses
-              harness the power of modern technology. We combine creative design
-              with technical expertise to deliver solutions that drive real
-              results.
+              DRAKVEX was founded with a vision to help businesses embrace modern technology and build a stronger digital presence. By combining creative design, innovative thinking, and technical expertise, we create websites and digital solutions that deliver meaningful results.
             </p>
             <p className="text-white/60 font-inter text-lg leading-relaxed">
-              David Joshwa serves as Founder and Developer of DRAKVEX, leading
-              a team passionate about building websites, AI automation systems,
-              and digital products that make a difference.
+              Founded by David Joshwa, DRAKVEX helps businesses transform ideas into powerful digital experiences. 
+              From modern websites to AI-driven solutions, every project is designed to deliver performance,
+              innovation, and measurable value.
             </p>
           </motion.div>
           <motion.div
@@ -104,16 +101,37 @@ export function AboutContent() {
             viewport={{ once: true }}
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           >
-            <div className="relative">
-              <div className="w-full aspect-square rounded-3xl bg-gradient-to-br from-brand-blue/20 via-brand-purple/10 to-transparent border border-white/10 flex items-center justify-center">
-                <div className="text-center p-12">
-                  <div className="text-6xl font-space-grotesk font-bold text-white mb-4">
-                    {new Date().getFullYear() - 2024}+
-                  </div>
-                  <div className="text-white/50 font-inter">Years of Building</div>
-                </div>
-              </div>
-            </div>
+           <div className="relative overflow-hidden rounded-3xl border border-white/10 group bg-white/[0.02] shadow-[0_0_40px_rgba(99,102,241,0.15)]">
+
+  <img
+    src="/david-joshwa.jpeg"
+    alt="David Joshwa - Founder & Developer"
+    className="h-[650px] w-full object-cover transition-all duration-700 group-hover:scale-105"
+  />
+
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+
+  {/* Content */}
+  <div className="absolute bottom-0 left-0 right-0 p-8">
+
+    <div className="inline-flex items-center px-3 py-1 mb-4 rounded-full border border-brand-blue/30 bg-brand-blue/10 backdrop-blur-sm">
+      <span className="text-xs uppercase tracking-[0.2em] text-brand-blue">
+        Founder of DRAKVEX
+      </span>
+    </div>
+
+    <h3 className="text-4xl font-bold text-white mb-2">
+      David Joshwa
+    </h3>
+
+    <p className="text-lg text-white/70">
+      Founder & Developer
+    </p>
+
+  </div>
+
+</div>
           </motion.div>
         </div>
       </section>
