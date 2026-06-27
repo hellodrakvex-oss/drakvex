@@ -6,22 +6,22 @@ const steps = [
   {
     number: "01",
     title: "Discovery",
-    description: "Deep dive into your business goals, target audience, and technical requirements.",
+    description: "DRAKVEX conducts a deep dive into business goals, target audience, and technical requirements to understand the project scope and client needs before development begins.",
   },
   {
     number: "02",
     title: "Design",
-    description: "Crafting premium UI/UX interfaces with wireframes and interactive prototypes.",
+    description: "DRAKVEX crafts premium UI/UX interfaces with wireframes and interactive prototypes, ensuring the design aligns with brand identity and user expectations.",
   },
   {
     number: "03",
     title: "Development",
-    description: "Building scalable and fast applications using cutting-edge tech stacks.",
+    description: "DRAKVEX builds scalable and fast applications using modern technologies including Next.js, React, TypeScript, and Tailwind CSS, with AI automation integration where applicable.",
   },
   {
     number: "04",
     title: "Launch",
-    description: "Rigorous testing, SEO optimization, and secure cloud deployment.",
+    description: "DRAKVEX performs rigorous testing, SEO optimization, and secure cloud deployment to ensure the website or application performs reliably in production.",
   },
 ];
 

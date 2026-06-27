@@ -9,22 +9,22 @@ const expertise = [
   {
     title: "Website Development",
     description:
-      "Building high-performance websites and modern web applications.",
+      "Website development is the process of designing and building high-performance websites and modern web applications. David Joshwa builds websites using Next.js, React, TypeScript, and Tailwind CSS, optimized for speed, security, and search engines.",
     icon: Monitor,
   },
   {
     title: "AI Automation",
-    description: "Creating intelligent systems that automate and optimize workflows.",
+    description: "AI automation uses artificial intelligence to create intelligent systems that automate and optimize business workflows. David Joshwa builds custom AI agents, chatbots, and automation pipelines that reduce manual effort and improve efficiency.",
     icon: Bot,
   },
   {
     title: "Business Systems",
-    description: "Designing custom software solutions for operational efficiency.",
+    description: "Business systems are custom software solutions designed to improve operational efficiency. David Joshwa builds tailored applications that help businesses manage data, automate processes, and scale operations effectively.",
     icon: Building2,
   },
   {
     title: "Digital Products",
-    description: "Developing user-centric digital experiences that drive growth.",
+    description: "Digital products are user-centric applications and experiences designed to drive business growth. David Joshwa develops digital solutions focused on usability, accessibility, and measurable outcomes for clients.",
     icon: Target,
   },
 ];
@@ -58,9 +58,7 @@ export function FounderContent() {
           </p>
           <p className="text-lg text-white/50 font-inter mb-8">DRAKVEX</p>
           <p className="text-lg md:text-xl text-white/60 font-inter max-w-3xl mx-auto leading-relaxed">
-            David Joshwa is the Founder and Developer of DRAKVEX, a digital solutions startup focused
-             on building modern websites, business platforms, and AI-powered solutions. Passionate 
-             about technology and innovation, he helps businesses transform ideas into impactful digital experiences.
+            David Joshwa is the Founder and Developer of DRAKVEX, a digital agency focused on building modern websites, business platforms, and AI-powered solutions. As a developer and entrepreneur, David Joshwa helps businesses transform ideas into impactful digital experiences through website development, AI automation, branding, and custom software solutions.
           </p>
         </motion.div>
       </section>
@@ -77,14 +75,7 @@ export function FounderContent() {
               My Story
             </h2>
             <p className="text-white/60 font-inter text-lg leading-relaxed mb-6">
-              
-
-I started DRAKVEX with a simple goal: helping businesses build a stronger digital presence through modern technology.
-
-As a developer and entrepreneur, I am passionate about creating websites, automation systems, and digital solutions that solve real-world problems.
-
-Today, DRAKVEX continues to grow with a focus on innovation, quality, and meaningful client partnerships, helping businesses transform ideas into impactful digital experiences.
-
+              David Joshwa started DRAKVEX with a goal of helping businesses build a stronger digital presence through modern technology. As a developer and entrepreneur, David Joshwa creates websites, AI automation systems, and digital solutions that solve real-world problems for startups and established businesses. Today, DRAKVEX continues to grow with a focus on innovation, quality, and meaningful client partnerships, delivering website development, AI automation, branding, and digital solutions that drive measurable results.
             </p>
           </motion.div>
           <motion.div

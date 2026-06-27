@@ -29,6 +29,8 @@ export const Footer = () => {
           <ul className="flex flex-col gap-4">
             <li><a href="/about" className="text-white/50 hover:text-brand-blue transition-colors font-inter text-sm">About</a></li>
             <li><a href="/founder" className="text-white/50 hover:text-brand-blue transition-colors font-inter text-sm">Founder</a></li>
+            <li><a href="/blog" className="text-white/50 hover:text-brand-blue transition-colors font-inter text-sm">Blog</a></li>
+            <li><a href="/faq" className="text-white/50 hover:text-brand-blue transition-colors font-inter text-sm">FAQ</a></li>
             <li><a href="#services" className="text-white/50 hover:text-brand-blue transition-colors font-inter text-sm">Services</a></li>
             <li><a href="#contact" className="text-white/50 hover:text-brand-blue transition-colors font-inter text-sm">Contact</a></li>
           </ul>

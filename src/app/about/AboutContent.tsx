@@ -4,36 +4,37 @@ import { motion } from "framer-motion";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { Monitor, Bot, Building2, Palette, Sparkles } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const services = [
   {
     title: "Website Development",
     description:
-      "High-performance marketing websites and scalable web applications tailored to your brand.",
+      "Website development is the process of designing, building, and maintaining websites for businesses. DRAKVEX creates high-performance marketing websites and scalable web applications tailored to each brand, optimized for speed, security, and search engines.",
     icon: Monitor,
   },
   {
     title: "AI Automation",
     description:
-      "Intelligent systems that automate repetitive tasks, streamline workflows, and save hours every day.",
+      "AI automation uses artificial intelligence to automate repetitive tasks and streamline business workflows. DRAKVEX builds intelligent automation systems including custom chatbots and data processing pipelines that save hours of manual work every day.",
     icon: Bot,
   },
   {
     title: "Business Systems",
     description:
-      "Custom software solutions designed to optimize operations, manage data, and drive growth.",
+      "Business systems are custom software solutions designed to optimize operations, manage data, and drive growth. DRAKVEX builds tailored systems that help businesses automate processes and make data-driven decisions.",
     icon: Building2,
   },
   {
     title: "Branding",
     description:
-      "Complete brand identities including logos, design systems, and visual guidelines that stand out.",
+      "Branding is the process of creating a unique identity for a business through visual and strategic elements. DRAKVEX creates complete brand identities including logos, design systems, and visual guidelines that help businesses stand out in their market.",
     icon: Palette,
   },
   {
     title: "Digital Experiences",
     description:
-      "Immersive, user-centric digital products that engage audiences and convert visitors into customers.",
+      "Digital experiences are user-centric digital products designed to engage audiences and convert visitors into customers. DRAKVEX builds immersive, interactive digital products focused on usability, accessibility, and measurable business outcomes.",
     icon: Sparkles,
   },
 ];
@@ -87,12 +88,10 @@ export function AboutContent() {
               Who We Are
             </h2>
             <p className="text-white/60 font-inter text-lg leading-relaxed mb-6">
-              DRAKVEX was founded with a vision to help businesses embrace modern technology and build a stronger digital presence. By combining creative design, innovative thinking, and technical expertise, we create websites and digital solutions that deliver meaningful results.
+              DRAKVEX is a digital agency founded by David Joshwa that helps businesses embrace modern technology and build a stronger digital presence. The agency provides website development, AI automation systems, branding, UI/UX design, and digital business solutions. By combining creative design and technical expertise, DRAKVEX creates websites and digital products that deliver measurable results for clients.
             </p>
             <p className="text-white/60 font-inter text-lg leading-relaxed">
-              Founded by David Joshwa, DRAKVEX helps businesses transform ideas into powerful digital experiences. 
-              From modern websites to AI-driven solutions, every project is designed to deliver performance,
-              innovation, and measurable value.
+              Founded by David Joshwa, DRAKVEX helps businesses transform ideas into powerful digital experiences including modern websites, AI-driven automation, and custom software solutions. Every project is designed to deliver performance, innovation, and measurable business value.
             </p>
           </motion.div>
           <motion.div
@@ -103,11 +102,14 @@ export function AboutContent() {
           >
            <div className="relative overflow-hidden rounded-3xl border border-white/10 group bg-white/[0.02] shadow-[0_0_40px_rgba(99,102,241,0.15)]">
 
-  <img
-    src="/david-joshwa.jpeg"
-    alt="David Joshwa - Founder & Developer"
-    className="h-[650px] w-full object-cover transition-all duration-700 group-hover:scale-105"
-  />
+  <Image
+  src="/david-joshwa.jpeg"
+  alt="David Joshwa - Founder & Developer"
+  width={800}
+  height={650}
+  priority
+  className="h-[650px] w-full object-cover transition-all duration-700 group-hover:scale-105"
+/>
 
   {/* Overlay */}
   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
@@ -147,9 +149,7 @@ export function AboutContent() {
             Our Mission
           </h2>
           <p className="text-white/60 font-inter text-lg leading-relaxed">
-            DRAKVEX helps businesses build modern websites and AI-powered
-            systems that accelerate growth. We believe technology should be
-            accessible, powerful, and beautifully crafted.
+            DRAKVEX helps businesses build modern websites and AI-powered systems that accelerate growth. Founded by David Joshwa, the agency believes technology should be accessible, powerful, and beautifully crafted. Every project is designed to deliver performance, innovation, and measurable value for clients.
           </p>
         </motion.div>
       </section>
@@ -201,10 +201,7 @@ export function AboutContent() {
               Our Vision
             </h2>
             <p className="text-white/60 font-inter text-lg leading-relaxed">
-              We envision a world where every business, regardless of size, has
-              access to world-class digital products and AI-driven automation.
-              DRAKVEX is committed to pushing the boundaries of what is
-              possible with technology.
+              DRAKVEX envisions a world where every business, regardless of size, has access to world-class digital products and AI-driven automation. The agency is committed to pushing the boundaries of what is possible with technology by delivering modern websites, automation systems, and digital solutions that drive business growth.
             </p>
           </motion.div>
           <motion.div

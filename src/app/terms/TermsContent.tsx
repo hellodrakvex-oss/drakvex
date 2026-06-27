@@ -30,7 +30,7 @@ const container = {
 export default function TermsContent() {
   const lastUpdated = "May 2026";
   return (
-    <section className="min-h-screen bg-black text-white font-inter overflow-x-hidden">
+    <main className="min-h-screen bg-black text-white font-inter overflow-x-hidden">
       {/* Hero */}
       <motion.header
         className="relative flex flex-col items-center justify-center py-28 text-center overflow-hidden"
@@ -204,6 +204,6 @@ export default function TermsContent() {
           </Link>
         </div>
       </section>
-    </section>
+    </main>
   );
 }

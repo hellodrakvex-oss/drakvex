@@ -79,6 +79,7 @@ const jsonLd = {
       name: "DRAKVEX",
       url: "https://drakvex.in",
       logo: "https://drakvex.in/Drakvex.png",
+      description: "DRAKVEX is a digital agency founded by David Joshwa, specializing in website development, AI automation, branding, UI/UX design, and digital business solutions.",
       founder: {
         "@type": "Person",
         name: "David Joshwa",
@@ -89,22 +90,43 @@ const jsonLd = {
         "@type": "Brand",
         name: "DRAKVEX",
       },
+      knowsAbout: [
+        "Website Development",
+        "AI Automation",
+        "Branding",
+        "UI/UX Design",
+        "Digital Solutions",
+      ],
       sameAs: [
         "https://drakvex.in/about",
         "https://drakvex.in/founder",
+        "https://drakvex.in/faq",
+        "https://drakvex.in/blog",
       ],
-      contactPoint: {
-        "@type": "ContactPoint",
-        email: "hello@drakvex.in",
-        contactType: "sales",
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          email: "hello@drakvex.in",
+          contactType: "sales",
+          availableLanguage: ["English"],
+        },
+        {
+          "@type": "ContactPoint",
+          telephone: "+919150254231",
+          contactType: "customer service",
+          availableLanguage: ["English", "Tamil"],
+        },
+      ],
+      address: {
+        "@type": "PostalAddress",
+        addressCountry: "IN",
       },
-      description: "Modern Websites & AI Systems for Growth",
     },
     {
       "@type": "WebSite",
       name: "DRAKVEX",
       url: "https://drakvex.in",
-      description: "Modern Websites & AI Systems for Growth",
+      description: "DRAKVEX is a digital agency founded by David Joshwa, specializing in website development, AI automation, branding, UI/UX design, and digital business solutions.",
       publisher: {
         "@type": "Organization",
         name: "DRAKVEX",
@@ -115,10 +137,18 @@ const jsonLd = {
       name: "David Joshwa",
       jobTitle: "Founder & Developer",
       url: "https://drakvex.in/founder",
+      description: "David Joshwa is the Founder and Developer of DRAKVEX, a digital agency specializing in website development, AI automation, branding, and digital business solutions.",
       worksFor: {
         "@type": "Organization",
         name: "DRAKVEX",
       },
+      knowsAbout: [
+        "Website Development",
+        "AI Automation",
+        "Branding",
+        "UI/UX Design",
+        "Digital Solutions",
+      ],
     },
   ],
 };

@@ -6,28 +6,28 @@ import { Zap, Code2, Cpu, Rocket } from "lucide-react";
 const bentoItems = [
   {
     title: "Lightning Fast",
-    description: "Built on Next.js edge infrastructure for sub-second load times.",
+    description: "DRAKVEX builds websites on Next.js edge infrastructure for sub-second load times, ensuring fast page loads and a smooth user experience across all devices.",
     icon: Zap,
     className: "md:col-span-2 md:row-span-1",
     delay: 0.1,
   },
   {
     title: "AI-Powered",
-    description: "Automate your workflows with custom AI agents and chatbots.",
+    description: "DRAKVEX builds custom AI agents and chatbots that automate business workflows, reduce manual effort, and improve operational efficiency through artificial intelligence.",
     icon: Cpu,
     className: "md:col-span-1 md:row-span-2",
     delay: 0.2,
   },
   {
     title: "Modern Tech",
-    description: "React, Tailwind, Framer Motion, and Vercel.",
+    description: "DRAKVEX uses modern technologies including React, Next.js, TypeScript, Tailwind CSS, Framer Motion, and Vercel to build scalable, secure digital products.",
     icon: Code2,
     className: "md:col-span-1 md:row-span-1",
     delay: 0.3,
   },
   {
     title: "Scalable Apps",
-    description: "Enterprise-grade architecture that grows with you.",
+    description: "DRAKVEX builds enterprise-grade architecture that scales with business growth, handling increased traffic, data, and user demand without performance degradation.",
     icon: Rocket,
     className: "md:col-span-2 md:row-span-1",
     delay: 0.4,

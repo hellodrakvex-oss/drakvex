@@ -127,14 +127,14 @@ transition={{
           for Growth
         </motion.h1>
 
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 3.2, ease: [0.16, 1, 0.3, 1] }}
-          className="mt-6 text-lg md:text-xl text-white/60 font-inter max-w-2xl"
-        >
-          We help startups and businesses build powerful digital experiences using cutting-edge web technologies and AI automation.
-        </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 3.2, ease: [0.16, 1, 0.3, 1] }}
+            className="mt-6 text-lg md:text-xl text-white/60 font-inter max-w-2xl"
+          >
+            DRAKVEX is a digital agency founded by David Joshwa, specializing in website development, AI automation, branding, UI/UX design, and digital business solutions for startups and businesses.
+          </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}

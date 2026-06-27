@@ -5,11 +5,10 @@ import { GlassCard } from "./ui/GlassCard";
 import { Quote } from "lucide-react";
 
 const testimonials = [
-
   {
     name: "Suresh",
     role: "Owner, Namma Thaiyal Kadai",
-    quote: "Our online orders skyrocketed after the new website launch.",
+    quote: "Our online orders skyrocketed after the new website launch. DRAKVEX built a custom e-commerce website that helped our fashion business reach more customers online.",
   },
 ];
 
@@ -26,7 +25,7 @@ export const Testimonials = () => {
         >
           Client <span className="text-brand-purple">Stories</span>
         </motion.h2>
-        <p className="text-white/60 font-inter text-lg">Don&apos;t just take our word for it.
+        <p className="text-white/60 font-inter text-lg">DRAKVEX has helped businesses across e-commerce, agriculture, and fashion industries build modern digital products and grow their online presence.
 </p>
       </div>
 

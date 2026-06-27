@@ -7,37 +7,37 @@ import { motion } from "framer-motion";
 const services = [
   {
     title: "Web Development",
-    description: "High-performance marketing websites and scalable web applications.",
+    description: "Website development is the process of designing and building websites that help businesses establish an online presence, generate leads, and improve customer engagement. DRAKVEX builds high-performance marketing websites and scalable web applications using modern technologies such as Next.js, React, and TypeScript. Each website is optimized for speed, security, mobile responsiveness, and search engines.",
     icon: Monitor,
   },
   {
     title: "UI/UX Design",
-    description: "Premium, user-centric designs that convert visitors into customers.",
+    description: "UI/UX design is the practice of creating user interfaces and experiences that make digital products intuitive, accessible, and visually appealing. DRAKVEX creates premium, user-centric designs that help businesses convert visitors into customers. This includes wireframing, prototyping, visual design, and usability testing to ensure a seamless user experience.",
     icon: Smartphone,
   },
   {
     title: "AI Automation",
-    description: "Intelligent systems to automate repetitive tasks and save hours.",
+    description: "AI automation uses artificial intelligence to automate repetitive tasks, streamline workflows, and reduce manual effort for businesses. DRAKVEX builds intelligent systems including custom chatbots, data processing pipelines, and AI agents that save hours of manual work each day. These solutions help businesses operate more efficiently and scale their operations.",
     icon: Bot,
   },
   {
     title: "WhatsApp Automation",
-    description: "Automated customer support and lead generation bots.",
+    description: "WhatsApp automation is the use of automated messaging tools to handle customer support, send notifications, and generate leads through the WhatsApp platform. DRAKVEX builds automated customer support systems and lead generation bots that help businesses communicate with customers at scale while maintaining a personal touch.",
     icon: MessageSquare,
   },
   {
     title: "Cloud Deployment",
-    description: "Secure, highly available, and auto-scaling infrastructure.",
+    description: "Cloud deployment is the process of hosting applications on cloud infrastructure to ensure security, high availability, and automatic scaling. DRAKVEX sets up secure, highly available, and auto-scaling infrastructure on platforms such as Vercel, AWS, and other cloud providers. This ensures websites and applications remain fast and reliable even during traffic spikes.",
     icon: Cloud,
   },
   {
     title: "E-Commerce",
-    description: "Custom storefronts designed to maximize conversion rates.",
+    description: "E-commerce development is the creation of online stores that enable businesses to sell products and services over the internet. DRAKVEX builds custom storefronts designed to maximize conversion rates, with features such as product management, payment processing, inventory tracking, and mobile-optimized shopping experiences.",
     icon: ShoppingCart,
   },
   {
     title: "SEO & Digital",
-    description: "Data-driven strategies to dominate search rankings.",
+    description: "SEO and digital marketing are strategies used to improve a website's visibility in search engine results and attract more visitors. DRAKVEX implements data-driven strategies including technical SEO, on-page optimization, content strategy, and performance optimization to help businesses rank higher and reach their target audience effectively.",
     icon: TrendingUp,
   },
 ];

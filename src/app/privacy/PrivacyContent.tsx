@@ -13,7 +13,7 @@ export default function PrivacyContent() {
   };
 
   return (
-    <section className="min-h-screen bg-black text-white font-inter overflow-x-hidden">
+    <main className="min-h-screen bg-black text-white font-inter overflow-x-hidden">
       {/* Hero */}
       <motion.header
         className="relative flex flex-col items-center justify-center py-28 text-center overflow-hidden"
@@ -166,7 +166,7 @@ export default function PrivacyContent() {
           </div>
         </div>
       </section>
-    </section>
+    </main>
   );
 }
 
