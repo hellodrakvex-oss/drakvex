@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { cn } from "@/lib/utils";
 import React from "react";
 
@@ -13,7 +13,7 @@ interface GlassCardProps {
 
 export const GlassCard = ({ children, className, hoverEffect = true, delay = 0 }: GlassCardProps) => {
   return (
-    <motion.div
+    <m.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
@@ -39,6 +39,6 @@ export const GlassCard = ({ children, className, hoverEffect = true, delay = 0 }
       <div className="relative z-10 h-full">
         {children}
       </div>
-    </motion.div>
+    </m.div>
   );
 };

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 
 export const CustomCursor = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -38,7 +38,7 @@ export const CustomCursor = () => {
 
   return (
     <>
-      <motion.div
+      <m.div
         className="fixed top-0 left-0 w-4 h-4 bg-white rounded-full pointer-events-none z-[100] mix-blend-difference"
         animate={{
           x: mousePosition.x - 8,
@@ -52,7 +52,7 @@ export const CustomCursor = () => {
           mass: 0.5,
         }}
       />
-      <motion.div
+      <m.div
         className="fixed top-0 left-0 w-8 h-8 border border-white/30 rounded-full pointer-events-none z-[99]"
         animate={{
           x: mousePosition.x - 16,

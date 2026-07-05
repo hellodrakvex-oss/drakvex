@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { Sparkles, Clock, User, Calendar } from "lucide-react";
 import Link from "next/link";
 
@@ -34,7 +34,7 @@ export function BlogArticleShell({
       </div>
 
       <article className="relative z-10 pt-40 pb-20 px-6 max-w-4xl mx-auto w-full">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
@@ -71,11 +71,11 @@ export function BlogArticleShell({
               Updated: {updatedDate}
             </span>
           </div>
-        </motion.div>
+        </m.div>
 
         {children}
 
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -101,7 +101,7 @@ export function BlogArticleShell({
               View FAQ
             </Link>
           </div>
-        </motion.div>
+        </m.div>
       </article>
     </main>
   );

@@ -1,14 +1,16 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
-import { BentoGrid } from "@/components/BentoGrid";
-import { Services } from "@/components/Services";
-import { Portfolio } from "@/components/Portfolio";
-import { Features } from "@/components/Features";
-import { Process } from "@/components/Process";
-import { TechMarquee } from "@/components/TechMarquee";
-import { Testimonials } from "@/components/Testimonials";
-import { Contact } from "@/components/Contact";
-import { Footer } from "@/components/Footer";
+import dynamic from "next/dynamic";
+
+const BentoGrid = dynamic(() => import("@/components/BentoGrid").then(m => m.BentoGrid));
+const Services = dynamic(() => import("@/components/Services").then(m => m.Services));
+const Portfolio = dynamic(() => import("@/components/Portfolio").then(m => m.Portfolio));
+const Features = dynamic(() => import("@/components/Features").then(m => m.Features));
+const Process = dynamic(() => import("@/components/Process").then(m => m.Process));
+const TechMarquee = dynamic(() => import("@/components/TechMarquee").then(m => m.TechMarquee));
+const Testimonials = dynamic(() => import("@/components/Testimonials").then(m => m.Testimonials));
+const Contact = dynamic(() => import("@/components/Contact").then(m => m.Contact));
+const Footer = dynamic(() => import("@/components/Footer").then(m => m.Footer));
 
 const homeSchema = {
   "@context": "https://schema.org",

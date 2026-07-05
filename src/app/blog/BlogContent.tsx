@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { Sparkles, ArrowRight, Clock, Calendar } from "lucide-react";
 import Link from "next/link";
 
@@ -62,7 +62,7 @@ export default function BlogContent() {
       </div>
 
       <section className="relative z-10 pt-40 pb-20 px-6 max-w-7xl mx-auto w-full">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
@@ -84,13 +84,13 @@ export default function BlogContent() {
           <p className="text-lg md:text-xl text-white/60 font-inter max-w-3xl mx-auto">
             Expert guides on website development, AI automation, branding, and digital business growth. Written by David Joshwa and the DRAKVEX team.
           </p>
-        </motion.div>
+        </m.div>
       </section>
 
       <section className="relative z-10 pb-32 px-6 max-w-5xl mx-auto w-full">
         <div className="flex flex-col gap-8">
           {articles.map((article, index) => (
-            <motion.div
+            <m.div
               key={article.slug}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -126,7 +126,7 @@ export default function BlogContent() {
                   Read Article <ArrowRight className="w-4 h-4" />
                 </span>
               </Link>
-            </motion.div>
+            </m.div>
           ))}
         </div>
       </section>

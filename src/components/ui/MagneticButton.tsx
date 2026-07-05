@@ -1,6 +1,6 @@
 "use client";
 
-import { HTMLMotionProps, motion } from "framer-motion";
+import { HTMLMotionProps, m } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { useRef, useState } from "react";
 
@@ -31,12 +31,12 @@ export const MagneticButton = ({ children, className, variant = "primary", ...pr
 
   const variants = {
     primary: "bg-white text-black hover:bg-white/90",
-    secondary: "bg-brand-blue text-white hover:bg-brand-blue/90 shadow-[0_0_20px_rgba(59,130,246,0.3)] hover:shadow-[0_0_30px_rgba(59,130,246,0.5)]",
+    secondary: "bg-[#2563eb] text-white hover:bg-[#2563eb]/90 shadow-[0_0_20px_rgba(37,99,235,0.3)] hover:shadow-[0_0_30px_rgba(37,99,235,0.5)]",
     outline: "bg-transparent border border-white/20 text-white hover:bg-white/5",
   };
 
   return (
-    <motion.button
+    <m.button
       ref={buttonRef}
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}
@@ -53,13 +53,13 @@ export const MagneticButton = ({ children, className, variant = "primary", ...pr
     >
       <span className="relative z-10 flex items-center justify-center gap-2">{children}</span>
       {variant !== "primary" && (
-        <motion.div
+        <m.div
           className="absolute inset-0 z-0 bg-gradient-to-r from-brand-blue/0 via-white/10 to-brand-purple/0"
           initial={{ x: "-100%" }}
           animate={{ x: isHovered ? "100%" : "-100%" }}
           transition={{ duration: 1, ease: "easeInOut" }}
         />
       )}
-    </motion.button>
+    </m.button>
   );
 };

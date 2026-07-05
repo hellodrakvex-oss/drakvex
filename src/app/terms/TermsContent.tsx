@@ -2,12 +2,12 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 
 // Reusable glass card component
 function GlassCard({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   return (
-    <motion.div
+    <m.div
       className={`bg-white/5 backdrop-blur-xl border border-[rgba(255,255,255,0.08)] rounded-xl p-8 sm:p-10 md:p-12 text-white/90 hover:shadow-[0_0_30px_rgba(59,130,246,0.3)] transition-shadow duration-300 ${className}`}
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -15,7 +15,7 @@ function GlassCard({ children, className = "" }: { children: React.ReactNode; cl
       transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }
 
@@ -32,7 +32,7 @@ export default function TermsContent() {
   return (
     <main className="min-h-screen bg-black text-white font-inter overflow-x-hidden">
       {/* Hero */}
-      <motion.header
+      <m.header
         className="relative flex flex-col items-center justify-center py-28 text-center overflow-hidden"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -50,24 +50,24 @@ export default function TermsContent() {
         <p className="mt-4 max-w-2xl text-lg text-white/70">
           Please review the terms and conditions governing the use of DRAKVEX services.
         </p>
-        <motion.span
+        <m.span
           className="mt-6 inline-block bg-white/10 backdrop-blur-md px-4 py-2 rounded-full text-sm text-white/80 border border-white/20"
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.4 }}
         >
           Last Updated — {lastUpdated}
-        </motion.span>
-        <motion.div
+        </m.span>
+        <m.div
           className="mt-8 w-48 h-0.5 bg-white/20 rounded-full"
           initial={{ width: 0 }}
           animate={{ width: "12rem" }}
           transition={{ delay: 0.5, duration: 0.6 }}
         />
-      </motion.header>
+      </m.header>
 
       {/* Legal Sections */}
-      <motion.div
+      <m.div
         className="mx-auto max-w-5xl space-y-12 py-20 px-6"
         variants={container}
         initial="hidden"
@@ -186,7 +186,7 @@ export default function TermsContent() {
             <a href="mailto:hello@drakvex.in" className="underline hover:text-brand-blue transition-colors ml-1">hello@drakvex.in</a>.
           </p>
         </GlassCard>
-      </motion.div>
+      </m.div>
 
       {/* Bottom CTA */}
       <section className="relative overflow-hidden py-24 bg-gradient-to-br from-black via-[#1a1a2a] to-black">

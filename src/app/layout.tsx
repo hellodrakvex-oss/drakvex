@@ -1,20 +1,21 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import { CustomCursor } from "@/components/ui/CustomCursor";
-import { LenisScroll } from "@/components/ui/LenisScroll";
-import { Preloader } from "@/components/ui/Preloader";
 import { Toaster } from "sonner";
 import Script from "next/script";
+import { MotionProvider } from "@/components/MotionProvider";
+import { DynamicProviders } from "@/components/DynamicProviders";
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -164,13 +165,15 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${spaceGrotesk.variable} antialiased dark`}
     >
+      <head>
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+      </head>
       <body className="bg-black text-white min-h-screen">
-        <div className="noise-overlay"></div>
+        <div className="noise-overlay" aria-hidden="true"></div>
 
-        <Preloader />
-        <CustomCursor />
-
-        <LenisScroll>{children}</LenisScroll>
+        <MotionProvider>
+          <DynamicProviders>{children}</DynamicProviders>
+        </MotionProvider>
 
         <Toaster
           position="top-right"
@@ -183,10 +186,10 @@ export default function RootLayout({
         />
         <Script
   src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
-  strategy="afterInteractive"
+  strategy="lazyOnload"
 />
 
-<Script id="google-analytics" strategy="afterInteractive">
+<Script id="google-analytics" strategy="lazyOnload">
   {`
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}

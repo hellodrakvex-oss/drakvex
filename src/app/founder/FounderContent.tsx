@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { Monitor, Bot, Building2, Target, ArrowRight } from "lucide-react";
 import Link from "next/link";
@@ -39,7 +39,7 @@ export function FounderContent() {
       </div>
 
       <section className="relative z-10 pt-40 pb-20 px-6 max-w-7xl mx-auto w-full">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
@@ -60,12 +60,12 @@ export function FounderContent() {
           <p className="text-lg md:text-xl text-white/60 font-inter max-w-3xl mx-auto leading-relaxed">
             David Joshwa is the Founder and Developer of DRAKVEX, a digital agency focused on building modern websites, business platforms, and AI-powered solutions. As a developer and entrepreneur, David Joshwa helps businesses transform ideas into impactful digital experiences through website development, AI automation, branding, and custom software solutions.
           </p>
-        </motion.div>
+        </m.div>
       </section>
 
       <section className="relative z-10 py-20 px-6 max-w-7xl mx-auto w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-          <motion.div
+          <m.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -77,8 +77,8 @@ export function FounderContent() {
             <p className="text-white/60 font-inter text-lg leading-relaxed mb-6">
               David Joshwa started DRAKVEX with a goal of helping businesses build a stronger digital presence through modern technology. As a developer and entrepreneur, David Joshwa creates websites, AI automation systems, and digital solutions that solve real-world problems for startups and established businesses. Today, DRAKVEX continues to grow with a focus on innovation, quality, and meaningful client partnerships, delivering website development, AI automation, branding, and digital solutions that drive measurable results.
             </p>
-          </motion.div>
-          <motion.div
+          </m.div>
+          <m.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -106,12 +106,12 @@ export function FounderContent() {
                
               </ul>
             </GlassCard>
-          </motion.div>
+          </m.div>
         </div>
       </section>
 
       <section className="relative z-10 py-20 px-6 max-w-7xl mx-auto w-full">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -123,7 +123,7 @@ export function FounderContent() {
           <p className="text-white/60 font-inter text-lg max-w-2xl">
             Areas where David Joshwa brings deep knowledge and experience.
           </p>
-        </motion.div>
+        </m.div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {expertise.map((item, index) => (
             <GlassCard
@@ -147,7 +147,7 @@ export function FounderContent() {
 
       <section className="relative z-10 py-20 px-6 max-w-7xl mx-auto w-full">
         <GlassCard className="p-12 md:p-16 text-center">
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -178,7 +178,7 @@ export function FounderContent() {
                 Get in Touch
               </Link>
             </div>
-          </motion.div>
+          </m.div>
         </GlassCard>
       </section>
     </main>

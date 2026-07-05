@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { Monitor, Bot, Building2, Palette, Sparkles } from "lucide-react";
 import Link from "next/link";
@@ -49,7 +49,7 @@ export function AboutContent() {
       </div>
 
       <section className="relative z-10 pt-40 pb-20 px-6 max-w-7xl mx-auto w-full">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
@@ -73,12 +73,12 @@ export function AboutContent() {
             crafting modern websites, AI-powered systems, and transformative
             digital experiences for startups and businesses worldwide.
           </p>
-        </motion.div>
+        </m.div>
       </section>
 
       <section className="relative z-10 py-20 px-6 max-w-7xl mx-auto w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-          <motion.div
+          <m.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -93,8 +93,8 @@ export function AboutContent() {
             <p className="text-white/60 font-inter text-lg leading-relaxed">
               Founded by David Joshwa, DRAKVEX helps businesses transform ideas into powerful digital experiences including modern websites, AI-driven automation, and custom software solutions. Every project is designed to deliver performance, innovation, and measurable business value.
             </p>
-          </motion.div>
-          <motion.div
+          </m.div>
+          <m.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -134,12 +134,12 @@ export function AboutContent() {
   </div>
 
 </div>
-          </motion.div>
+          </m.div>
         </div>
       </section>
 
       <section className="relative z-10 py-20 px-6 max-w-7xl mx-auto w-full">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -151,11 +151,11 @@ export function AboutContent() {
           <p className="text-white/60 font-inter text-lg leading-relaxed">
             DRAKVEX helps businesses build modern websites and AI-powered systems that accelerate growth. Founded by David Joshwa, the agency believes technology should be accessible, powerful, and beautifully crafted. Every project is designed to deliver performance, innovation, and measurable value for clients.
           </p>
-        </motion.div>
+        </m.div>
       </section>
 
       <section className="relative z-10 py-20 px-6 max-w-7xl mx-auto w-full">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -167,7 +167,7 @@ export function AboutContent() {
           <p className="text-white/60 font-inter text-lg max-w-2xl">
             From concept to launch, we deliver end-to-end digital solutions.
           </p>
-        </motion.div>
+        </m.div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <GlassCard
@@ -191,7 +191,7 @@ export function AboutContent() {
 
       <section className="relative z-10 py-20 px-6 max-w-7xl mx-auto w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-          <motion.div
+          <m.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -203,8 +203,8 @@ export function AboutContent() {
             <p className="text-white/60 font-inter text-lg leading-relaxed">
               DRAKVEX envisions a world where every business, regardless of size, has access to world-class digital products and AI-driven automation. The agency is committed to pushing the boundaries of what is possible with technology by delivering modern websites, automation systems, and digital solutions that drive business growth.
             </p>
-          </motion.div>
-          <motion.div
+          </m.div>
+          <m.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -223,13 +223,13 @@ export function AboutContent() {
             >
               Meet the Founder →
             </Link>
-          </motion.div>
+          </m.div>
         </div>
       </section>
 
       <section className="relative z-10 py-20 px-6 max-w-7xl mx-auto w-full">
         <GlassCard className="p-12 md:p-16 text-center">
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -247,7 +247,7 @@ export function AboutContent() {
             >
               Start Your Project
             </Link>
-          </motion.div>
+          </m.div>
         </GlassCard>
       </section>
     </main>

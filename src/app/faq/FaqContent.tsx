@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { Sparkles, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
@@ -95,7 +95,7 @@ function FaqItem({
   const [open, setOpen] = useState(false);
 
   return (
-    <motion.article
+    <m.article
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -125,7 +125,7 @@ function FaqItem({
           {answer}
         </p>
       </div>
-    </motion.article>
+    </m.article>
   );
 }
 
@@ -139,7 +139,7 @@ export default function FaqContent() {
       </div>
 
       <section className="relative z-10 pt-40 pb-20 px-6 max-w-7xl mx-auto w-full">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
@@ -161,7 +161,7 @@ export default function FaqContent() {
           <p className="text-lg md:text-xl text-white/60 font-inter max-w-3xl mx-auto">
             Everything you need to know about DRAKVEX, its services, founder David Joshwa, and how to start your digital project.
           </p>
-        </motion.div>
+        </m.div>
       </section>
 
       <section className="relative z-10 py-10 pb-20 px-6 max-w-3xl mx-auto w-full">
@@ -179,7 +179,7 @@ export default function FaqContent() {
 
       <section className="relative z-10 py-20 px-6 max-w-7xl mx-auto w-full">
         <div className="bg-white/[0.03] backdrop-blur-xl border border-white/[0.08] rounded-2xl p-12 md:p-16 text-center">
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -204,7 +204,7 @@ export default function FaqContent() {
                 Back to Home
               </Link>
             </div>
-          </motion.div>
+          </m.div>
         </div>
       </section>
     </main>

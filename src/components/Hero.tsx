@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { m, useScroll, useTransform } from "framer-motion";
 import { MagneticButton } from "./ui/MagneticButton";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { useRef, useMemo } from "react";
@@ -36,7 +36,7 @@ const particles = useMemo(
       <div className="absolute inset-0 z-0 overflow-hidden bg-black">
 
         {/* Main Aurora Glow */}
-        <motion.div
+        <m.div
           animate={{
             scale: [1, 1.2, 1],
             rotate: [0, 360],
@@ -50,7 +50,7 @@ const particles = useMemo(
     bg-blue-500/20 blur-[140px]"
         />
 
-        <motion.div
+        <m.div
           animate={{
             scale: [1, 1.3, 1],
             rotate: [360, 0],
@@ -81,7 +81,7 @@ const particles = useMemo(
 {/* Floating Particles */}
 <div className="absolute inset-0">
   {particles.map(p => (
-    <motion.div
+    <m.div
       key={p.id}
       initial={{ opacity: 0, y: p.y, x: p.x }}
       animate={{ opacity: [0, 1, 0], y: -100 }}
@@ -100,11 +100,11 @@ transition={{
       </div>
 
       {/* Content */}
-      <motion.div
+      <m.div
         style={{ y: y1, opacity }}
         className="relative z-10 container mx-auto px-6 flex flex-col items-center justify-center text-center h-full"
       >
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 2.8 }}
@@ -112,9 +112,9 @@ transition={{
         >
           <Sparkles className="w-4 h-4 text-brand-blue" />
           <span className="text-xs font-inter uppercase tracking-widest text-white/80">Premium Digital Agency</span>
-        </motion.div>
+        </m.div>
 
-        <motion.h1
+        <m.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 3, ease: [0.16, 1, 0.3, 1] }}
@@ -125,18 +125,18 @@ transition={{
             AI Systems
           </span>{" "}
           for Growth
-        </motion.h1>
+        </m.h1>
 
-          <motion.p
+          <m.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 3.2, ease: [0.16, 1, 0.3, 1] }}
             className="mt-6 text-lg md:text-xl text-white/60 font-inter max-w-2xl"
           >
             DRAKVEX is a digital agency founded by David Joshwa, specializing in website development, AI automation, branding, UI/UX design, and digital business solutions for startups and businesses.
-          </motion.p>
+          </m.p>
 
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 3.4, ease: [0.16, 1, 0.3, 1] }}
@@ -152,15 +152,15 @@ transition={{
   </MagneticButton>
 </a>
           
-        </motion.div>
-      </motion.div>
+        </m.div>
+      </m.div>
 
       {/* Floating Elements / Mockups (Parallax) */}
-      <motion.div
+      <m.div
         style={{ y: y2 }}
         className="absolute inset-0 pointer-events-none z-20 hidden lg:block"
       >
-        <motion.div
+        <m.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.5, delay: 3.6 }}
@@ -169,9 +169,9 @@ transition={{
           <div className="w-1/2 h-2 bg-white/20 rounded" />
           <div className="w-3/4 h-2 bg-white/10 rounded" />
           <div className="flex-1 rounded bg-gradient-to-br from-brand-blue/20 to-transparent border border-brand-blue/30 mt-2" />
-        </motion.div>
+        </m.div>
 
-        <motion.div
+        <m.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.5, delay: 3.8 }}
@@ -184,8 +184,8 @@ transition={{
           <div className="w-full h-2 bg-white/10 rounded mt-4" />
           <div className="w-4/5 h-2 bg-white/10 rounded" />
           <div className="w-full h-2 bg-white/10 rounded" />
-        </motion.div>
-      </motion.div>
+        </m.div>
+      </m.div>
     </section>
   );
 };

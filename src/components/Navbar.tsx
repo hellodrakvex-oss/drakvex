@@ -1,7 +1,7 @@
 "use client";
 
 import { useState} from "react";
-import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+import { m, useScroll, useMotionValueEvent } from "framer-motion";
 import { MagneticButton } from "./ui/MagneticButton";
 import Image from "next/image";
 
@@ -28,7 +28,7 @@ export const Navbar = () => {
   });
 
   return (
-    <motion.nav
+    <m.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 2.5 }}
@@ -72,6 +72,6 @@ export const Navbar = () => {
           </MagneticButton>
         </div>
       </div>
-    </motion.nav>
+    </m.nav>
   );
 };

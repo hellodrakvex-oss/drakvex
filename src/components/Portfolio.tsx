@@ -1,133 +1,111 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
-import { MagneticButton } from "./ui/MagneticButton";
-import Image from "next/image";
+import { m } from "framer-motion";
+import { projects } from "@/data/portfolio";
+import { FeaturedProject } from "./FeaturedProject";
+import { ProjectCard } from "./ProjectCard";
+import { PortfolioCta } from "./PortfolioCta";
 
-const projects = [
-  {
-    title: "Mithilaipatti.in",
-    category: "Cultural Community Platform",
-    tech: ["Html", "Css", "js"],
-    link: "https://www.mithilaipatti.in",
-    image: "/projects/Mithilaipatti.png",
-    color: "from-amber-500/20 to-orange-500/5",
+const sectionVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.12,
+      delayChildren: 0.1,
+    },
   },
-  {
-    title: "AgriHubTN.com",
-    category: "Modern Agriculture Commerce Platform",
-    tech: ["Html", "Css", "Js", "Node.js", "MongoDB", "Stripe"],
-    link: "https://www.agrihubtn.com",
-    image: "/projects/AgriHubTN.png",
-    color: "from-green-500/20 to-emerald-500/5",
+};
+
+const headingItem = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] as const },
   },
-  {
-    title: "NammaThaiyalKadai.in",
-    category: "Fashion & Tailoring Business Website",
-    tech: ["Html", "Css", "js"],
-    link: "https://www.nammathaiyalkadai.in",
-    image: "/projects/NammaThaiyalKadai.png",
-    color: "from-pink-500/20 to-rose-500/5",
-  },
-];
+};
 
 export const Portfolio = () => {
+  const featuredProjects = projects.filter((p) => p.featured);
+  const moreProjects = projects.filter((p) => !p.featured);
+
   return (
-    <section id="work" className="py-32 relative z-10 px-6 max-w-7xl mx-auto">
-      <div className="mb-20 text-center">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-4xl md:text-6xl font-space-grotesk font-bold mb-6"
-        >
-          Elite Digital <span className="text-brand-blue">Showcase</span>
-        </motion.h2>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.1 }}
-          className="text-white/60 font-inter text-lg max-w-2xl mx-auto"
-        >
-          Explore our recent world-class products designed and engineered for modern businesses.
-        </motion.p>
-      </div>
+    <section
+      id="work"
+      className="relative z-10 py-24 md:py-32 lg:py-40 px-6"
+      aria-label="Selected Work"
+    >
+      {/* Background orbs */}
+      <div className="absolute top-1/4 -left-40 w-[500px] h-[500px] bg-brand-blue/5 rounded-full blur-[150px] pointer-events-none" />
+      <div className="absolute bottom-1/4 -right-40 w-[400px] h-[400px] bg-brand-purple/5 rounded-full blur-[120px] pointer-events-none" />
 
-      <div className="flex flex-col gap-24">
-        {projects.map((project, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className={`flex flex-col ${index % 2 !== 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12`}
+      {/* Grid texture */}
+      <div
+        className="absolute inset-0 opacity-[0.015] pointer-events-none"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)",
+          backgroundSize: "60px 60px",
+        }}
+      />
+
+      <div className="max-w-7xl mx-auto relative z-10">
+        {/* Section Header */}
+        <m.div
+          variants={sectionVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          className="mb-16 md:mb-20 lg:mb-28 text-center"
+        >
+          <m.h2
+            variants={headingItem}
+            className="text-4xl md:text-5xl lg:text-6xl font-space-grotesk font-bold text-white mb-5 md:mb-6"
           >
-            {/* Project Mockup */}
-            <div className="w-full lg:w-3/5 relative group cursor-pointer">
-              <div className={`absolute inset-0 bg-gradient-to-br ${project.color} blur-3xl opacity-0 group-hover:opacity-50 transition-opacity duration-700`} />
+            Selected <span className="text-brand-blue">Work</span>
+          </m.h2>
 
-              <div className="relative aspect-[16/10] rounded-2xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm p-4 md:p-8 transform transition-transform duration-700 group-hover:scale-[1.02]">
-                {/* Browser Frame */}
-                <div className="w-full h-full rounded-lg overflow-hidden border border-white/10 bg-black shadow-2xl flex flex-col">
-                  <div className="h-8 bg-white/5 border-b border-white/10 flex items-center px-4 gap-2">
-                    <div className="w-3 h-3 rounded-full bg-red-500/50" />
-                    <div className="w-3 h-3 rounded-full bg-yellow-500/50" />
-                    <div className="w-3 h-3 rounded-full bg-green-500/50" />
-                  </div>
-                  <div className="flex-1 relative overflow-hidden">
-                    <Image
-                      src={project.image}
-                      alt={project.title}
-                      fill
-                      className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
-                    />
+          <m.p
+            variants={headingItem}
+            className="text-base md:text-lg text-white/50 font-inter max-w-2xl mx-auto leading-relaxed"
+          >
+            Every project represents a real business, a unique challenge, and a carefully
+            crafted digital solution built by DRAKVEX.
+          </m.p>
+        </m.div>
 
-                    <div className="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-all duration-500" />
+        {/* Featured Projects */}
+        <div className="space-y-24 md:space-y-28 lg:space-y-32 mb-24 md:mb-28 lg:mb-32">
+          {featuredProjects.map((project, index) => (
+            <FeaturedProject key={project.id} project={project} index={index} />
+          ))}
+        </div>
 
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 backdrop-blur-sm">
-                      <a href={project.link} target="_blank" rel="noopener noreferrer">
-                        <MagneticButton variant="primary">
-                          View Live Site
-                        </MagneticButton>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        {/* More Projects */}
+        <div className="mb-24 md:mb-32">
+          <m.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            className="mb-10 md:mb-14"
+          >
+            <h3 className="text-xl md:text-2xl font-space-grotesk font-bold text-white/80">
+              More Projects
+            </h3>
+            <div className="mt-2 w-12 h-0.5 bg-brand-blue/50 rounded-full" />
+          </m.div>
 
-            {/* Project Info */}
-            <div className="w-full lg:w-2/5 flex flex-col">
-              <span className="text-brand-blue font-inter uppercase tracking-widest text-sm mb-4">
-                {project.category}
-              </span>
-              <h3 className="text-3xl md:text-4xl font-space-grotesk font-bold mb-6 text-white group-hover:text-brand-blue transition-colors">
-                {project.title}
-              </h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            {moreProjects.map((project, index) => (
+              <ProjectCard key={project.id} project={project} index={index} />
+            ))}
+          </div>
+        </div>
 
-              <div className="flex flex-wrap gap-2 mb-8">
-                {project.tech.map((t, i) => (
-                  <span key={i} className="px-3 py-1 text-xs font-inter rounded-full border border-white/10 bg-white/5 text-white/70">
-                    {t}
-                  </span>
-                ))}
-              </div>
-
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-white hover:text-brand-blue transition-colors font-inter group"
-              >
-                View Case Study
-                <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-              </a>
-            </div>
-          </motion.div>
-        ))}
+        {/* CTA */}
+        <PortfolioCta />
       </div>
     </section>
   );

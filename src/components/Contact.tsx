@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { GlassCard } from "./ui/GlassCard";
 import { MagneticButton } from "./ui/MagneticButton";
 import {
@@ -20,7 +20,7 @@ export const Contact = () => {
       <div className="flex flex-col lg:flex-row gap-16">
         {/* Info */}
         <div className="lg:w-1/2">
-          <motion.h2
+          <m.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -31,9 +31,9 @@ export const Contact = () => {
             <span className="text-brand-blue">
               Something Powerful?
             </span>
-          </motion.h2>
+          </m.h2>
 
-          <motion.p
+          <m.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -43,7 +43,7 @@ export const Contact = () => {
             Let&apos;s transform your business with
             premium digital experiences and AI
             automation.
-          </motion.p>
+          </m.p>
 
           <div className="flex flex-col gap-6">
             <a

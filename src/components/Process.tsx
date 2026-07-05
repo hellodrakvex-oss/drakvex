@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 
 const steps = [
   {
@@ -29,15 +29,15 @@ export const Process = () => {
   return (
     <section id="process" className="py-32 relative z-10 px-6 max-w-7xl mx-auto">
       <div className="mb-24 md:w-1/2">
-        <motion.h2 
+        <m.h2 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-4xl md:text-6xl font-space-grotesk font-bold mb-6"
         >
           Our <span className="text-brand-purple">Process</span>
-        </motion.h2>
-        <motion.p 
+        </m.h2>
+        <m.p 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -45,7 +45,7 @@ export const Process = () => {
           className="text-white/60 font-inter text-lg"
         >
           A streamlined approach to turning complex problems into elegant digital solutions.
-        </motion.p>
+        </m.p>
       </div>
 
       <div className="relative">
@@ -54,7 +54,7 @@ export const Process = () => {
 
         <div className="space-y-12 md:space-y-24">
           {steps.map((step, index) => (
-            <motion.div 
+            <m.div 
               key={index}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -79,7 +79,7 @@ export const Process = () => {
                   {step.description}
                 </p>
               </div>
-            </motion.div>
+            </m.div>
           ))}
         </div>
       </div>

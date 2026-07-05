@@ -1,5 +1,3 @@
-"use client";
-
 import { GlassCard } from "./ui/GlassCard";
 import { Zap, Code2, Cpu, Rocket } from "lucide-react";
 

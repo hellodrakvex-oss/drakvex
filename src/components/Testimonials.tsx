@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { GlassCard } from "./ui/GlassCard";
 import { Quote } from "lucide-react";
 
@@ -17,14 +17,14 @@ export const Testimonials = () => {
   return (
     <section className="py-32 relative z-10 px-6 max-w-7xl mx-auto">
       <div className="text-center mb-20">
-        <motion.h2
+        <m.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-4xl md:text-5xl font-space-grotesk font-bold mb-4"
         >
           Client <span className="text-brand-purple">Stories</span>
-        </motion.h2>
+        </m.h2>
         <p className="text-white/60 font-inter text-lg">DRAKVEX has helped businesses across e-commerce, agriculture, and fashion industries build modern digital products and grow their online presence.
 </p>
       </div>
@@ -41,7 +41,7 @@ export const Testimonials = () => {
                 {t.name.charAt(0)}
               </div>
               <div>
-                <h4 className="text-white font-inter font-medium text-sm">{t.name}</h4>
+                <p className="text-white font-inter font-medium text-sm">{t.name}</p>
                 <p className="text-white/50 text-xs font-inter">{t.role}</p>
               </div>
             </div>

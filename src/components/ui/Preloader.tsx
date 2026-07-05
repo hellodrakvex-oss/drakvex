@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 
 export const Preloader = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -10,21 +10,21 @@ export const Preloader = () => {
     // Simulate loading time or wait for window load
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2500); // 2.5s cinematic intro
+    }, 800);
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <AnimatePresence>
       {isLoading && (
-        <motion.div
+        <m.div
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
           className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-black"
         >
           {/* Animated glow background */}
-          <motion.div
+          <m.div
             className="absolute inset-0 bg-gradient-to-tr from-brand-blue/10 via-transparent to-brand-purple/10"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -34,7 +34,7 @@ export const Preloader = () => {
           <div className="relative flex flex-col items-center">
             {/* Logo Text */}
             <div className="overflow-hidden">
-              <motion.h1
+              <m.p
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{
@@ -45,12 +45,12 @@ export const Preloader = () => {
                 className="text-5xl md:text-7xl font-space-grotesk font-bold tracking-tighter text-white"
               >
                 DRAKVEX
-              </motion.h1>
+              </m.p>
             </div>
             
             {/* Tagline */}
             <div className="overflow-hidden mt-2">
-              <motion.p
+              <m.p
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{
@@ -61,17 +61,17 @@ export const Preloader = () => {
                 className="text-sm md:text-base font-inter tracking-widest text-white/50 uppercase"
               >
                 Digital Excellence
-              </motion.p>
+              </m.p>
             </div>
 
             {/* Loading line */}
-            <motion.div
+            <m.div
               className="w-0 h-[1px] bg-white mt-8"
               animate={{ width: "100%" }}
               transition={{ duration: 1.5, ease: "easeInOut", delay: 0.8 }}
             />
           </div>
-        </motion.div>
+        </m.div>
       )}
     </AnimatePresence>
   );

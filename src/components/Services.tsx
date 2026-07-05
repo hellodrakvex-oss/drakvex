@@ -2,7 +2,7 @@
 
 import { GlassCard } from "./ui/GlassCard";
 import { Monitor, Smartphone, Bot, MessageSquare, Cloud, ShoppingCart, TrendingUp } from "lucide-react";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 
 const services = [
   {
@@ -48,15 +48,15 @@ export const Services = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
           <div className="max-w-2xl">
-            <motion.h2 
+            <m.h2 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               className="text-4xl md:text-5xl font-space-grotesk font-bold mb-6"
             >
               Premium Digital <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-purple to-brand-blue">Services</span>
-            </motion.h2>
-            <motion.p 
+            </m.h2>
+            <m.p 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -64,7 +64,7 @@ export const Services = () => {
               className="text-white/60 font-inter text-lg"
             >
               From stunning interfaces to intelligent automation, we provide end-to-end digital engineering for modern brands.
-            </motion.p>
+            </m.p>
           </div>
         </div>
 

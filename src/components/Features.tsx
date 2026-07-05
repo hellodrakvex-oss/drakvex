@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
 
 const features = [
@@ -19,15 +19,15 @@ export const Features = () => {
     <section className="py-32 relative z-10 px-6 max-w-7xl mx-auto border-t border-white/5">
       <div className="flex flex-col lg:flex-row gap-16 items-center">
         <div className="lg:w-1/2">
-          <motion.h2 
+          <m.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="text-3xl md:text-5xl font-space-grotesk font-bold mb-6"
           >
             Why Choose <span className="text-brand-blue">DRAKVEX</span>?
-          </motion.h2>
-          <motion.p 
+          </m.h2>
+          <m.p 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -35,12 +35,12 @@ export const Features = () => {
             className="text-white/60 font-inter text-lg mb-8"
           >
             DRAKVEX engineers digital ecosystems that drive business growth, automate operations through AI, and elevate brands globally using modern web technologies and intelligent systems.
-          </motion.p>
+          </m.p>
         </div>
 
         <div className="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
           {features.map((feature, idx) => (
-            <motion.div
+            <m.div
               key={idx}
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -50,7 +50,7 @@ export const Features = () => {
             >
               <CheckCircle2 className="w-5 h-5 text-brand-blue group-hover:text-white transition-colors" />
               <span className="font-inter text-white/80 group-hover:text-white transition-colors">{feature}</span>
-            </motion.div>
+            </m.div>
           ))}
         </div>
       </div>

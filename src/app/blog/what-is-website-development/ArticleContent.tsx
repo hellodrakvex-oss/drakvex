@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { BlogArticleShell } from "@/components/BlogArticleShell";
 import { GlassCard } from "@/components/ui/GlassCard";
 import Link from "next/link";
@@ -32,7 +32,7 @@ export default function ArticleContent() {
       updatedDate="June 27, 2026"
       readingTime="8 min read"
     >
-      <motion.div
+      <m.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -190,7 +190,7 @@ export default function ArticleContent() {
             <Link href="/blog/why-every-business-needs-a-website" className="text-brand-blue hover:text-brand-blue/80 font-inter text-sm underline transition-colors">Why Every Business Needs a Website</Link>
           </div>
         </div>
-      </motion.div>
+      </m.div>
     </BlogArticleShell>
   );
 }

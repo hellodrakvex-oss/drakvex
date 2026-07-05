@@ -18,10 +18,14 @@ body {
   color: var(--foreground);
   font-family: var(--font-inter), sans-serif;
   overflow-x: hidden;
-  cursor: none; /* Custom cursor */
 }
 
-/* Custom noise texture */
+@media (pointer: fine) {
+  body {
+    cursor: none;
+  }
+}
+
 .noise-overlay {
   position: fixed;
   top: 0;
